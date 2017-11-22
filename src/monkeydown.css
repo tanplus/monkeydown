@@ -1,0 +1,80 @@
+/* body */
+body { max-width: 800px; margin: auto auto; }
+
+/* 連結 */
+a { color: #668cff; } /*藍#668cff*/
+a:hover { color: #b366ff; text-decoration: none; } /*紫#b366ff*/
+
+/* 文字 */
+em { font-style:normal; color: lightgray; } /*弱化*/
+strong { font-weight:normal; color: #668cff; } /*強調 藍#668cff*/
+
+/* 標題 */
+h1 { font-size:1em; color: #ff6666; } /*紅#ff6666*/
+h2 { font-size:1em; color: #ff8c66; } /*橘紅#ff8c66*/
+h3 { font-size:1em; color: #ffb366; } /*橘#ffb366*/
+h4 { font-size:1em; color: #ffd966; } /*黃#ffd966*/
+h5 { font-size:1em; color: lightgray; }
+h6 { font-size:1em; color: lightgray; }
+
+/* 圖片 縮小圖 */
+img { max-height: 30px; max-width:200px; }
+
+/* 圖片 連結失效時，在頁面上留下一個無圖片的區塊 */
+img { min-height: 5px; min-width:5px; background-color:lightgray; }
+
+/* 圖片 美化 */
+img { border: solid 1px lightgray; }
+
+/* 程式碼 外框 */
+code { background: lightgray; border-radius: 0.2em; }
+pre { padding: 0.5em; background: lightgray; overflow-x: auto; border-radius: 0.4em; }
+pre { margin: 0; }
+
+/* 表格 格線+圓角 */
+table { border-collapse: separate; border-spacing: 1px; }
+th, td { background: lightgray; }
+tr:first-child th:first-child { border-top-left-radius:  0.4em; } /*左上*/
+tr:first-child th:last-child { border-top-right-radius:  0.4em; } /*右上*/
+tr:last-child td:first-child{ border-bottom-left-radius: 0.4em; } /*左下*/
+tr:last-child td:last-child{ border-bottom-right-radius: 0.4em; } /*右下*/
+
+/* 表格 不換行 */
+th, td { white-space: nowrap; }
+
+/* 表格 美化 */
+th, td { padding: 4px; }
+li > table { display: inline-block; vertical-align: top; }
+
+/* 清單 表格內的清單，不用符號 */
+th ul, td ul { -webkit-padding-start: 0em; }
+th li, td li { list-style-type: none; }
+
+/* 清單 美化 記號縮排，窄一點 */
+ul, ol { -webkit-padding-start: 2em; }
+
+/* 清單 美化 左邊對齊線 */
+ul, ol { border-left: 1px dashed lightgray; border-radius: 0.4em; }
+
+/* 段落 上下不要留白 */
+/* h1, h2, h3, h4, h5, h6, p, ul, ol { -webkit-margin-before:0em; -webkit-margin-after:0em; } */
+
+/* 統一上下留白 */
+/* h1, h2, h3, h4, h5, h6, p, ul, ol, li, table, pre { -webkit-margin-before:0.5em; -webkit-margin-after:0.5em; } */
+body > h1,
+body > h2,
+body > h3,
+body > h4,
+body > h5,
+body > h6,
+body > p,
+body > ul,
+body > ol,
+body > table,
+body > pre { -webkit-margin-before:0.5em; -webkit-margin-after:0.5em; }
+/* li { -webkit-margin-before:0.2em; -webkit-margin-after:0.2em; } */
+
+/* 字型 MyMono 程式碼 等寬字 */
+@font-face { font-family: MyMono; src: local(微軟正黑體); }
+@font-face { font-family: MyMono; unicode-range: U+00-024F; src: url("http://themes.googleusercontent.com/static/fonts/inconsolata/v3/BjAYBlHtW3CJxDcjzrnZCIbN6UDyHWBl620a-IRfuBk.woff") format("woff"); }
+* { font-family: MyMono; line-height: 1em; }
